@@ -13,4 +13,10 @@ for (let i = 0; i < arr.length; i++) {
   jsonObj.push(obj);
 }
 
-console.log(jsonObj);
+const sortedByYear = jsonObj.sort(
+  (a, b) => parseInt(a.TIME) - parseInt(b.TIME)
+);
+
+sortedByYear.map((item) => {
+  console.log(`Country:${item.LOCATION} Year:${item.TIME} Debt:${item.Value}`);
+});
