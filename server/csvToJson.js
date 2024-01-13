@@ -18,17 +18,3 @@ function csvToJSON() {
 }
 
 module.exports.csvToJSON = csvToJSON;
-// for (let j = 0; j < row.length; j++) {
-//   obj[headers[j].trim()] = row[j].trim();
-// }
-// jsonObj.push(obj);
-
-// console.log(jsonObj);
-// console.log(jsonObj);
-// const sortedByYear = jsonObj.sort(
-//   (a, b) => parseInt(a.TIME) - parseInt(b.TIME)
-// );
-
-// sortedByYear.map((item) => {
-//   console.log(`Country:${item.LOCATION} Year:${item.TIME} Debt:${item.Value}`);
-// });
